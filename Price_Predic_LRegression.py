@@ -1,7 +1,7 @@
-#Importing numpy, matplotlib.pyplot
+#Import Python libraries
 import numpy as np
 import matplotlib.pyplot as plt
-#Training dataset
+#Define input,output variables
 x_train = np.array([1.0,2.0])
 y_train = np.array([300.0,500.0])
 #Let
@@ -18,8 +18,9 @@ def compute_model_output(x,w,b):
 #Store y in tmp_f_wb
 tmp_f_wb = compute_model_output(x_train,w,b,)
 
-plt.plot(x_train,tmp_f_wb,c='b',label='Our prediction')#Plot the fitting line
-plt.scatter(x_train,y_train,marker='o',c='r',label='Acutal Values')#Plot data points
+plt.plot(x_train,tmp_f_wb,c='b',label='Our prediction')#.plot plots the fitting line
+plt.scatter(x_train,y_train,marker='o',c='r',label='Acutal Values')#.scatter plots data points
+#Sets title and all
 plt.title("Housing Prices")
 plt.ylabel('Price')
 plt.xlabel('Size')
